@@ -1,6 +1,5 @@
 <?php
-$db = mysqli_connect('localhost', 'forjob', 'forjob', 'forjob');
-
+include './db.php';
 $query = mysqli_query($db, "SELECT * FROM `employee` WHERE 1");
 ?>
 <h1>Список сотрудников</h1>
