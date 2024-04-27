@@ -29,7 +29,7 @@ if (!empty($_POST)) {
                 <label for=" position">Должность</label>
                 <input type="text" id="position" name="position" value="<?= $item['position'] ?>">
                 <label for="salary">Зарплата</label>
-                <input type="text" id="salary" name="salary" value=" <?= $item['salary'] ?>">
+                <input type="number" id="salary" name="salary" value=" <?= $item['salary'] ?>">
                 <input type="submit" value="Изменить">
             </form>
         </li>
