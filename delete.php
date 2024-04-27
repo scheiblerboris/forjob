@@ -15,13 +15,17 @@ if (!empty($_POST)) {
 
 <form action="delete.php" method="post" enctype="multipart/form-data">
     <h1>Список сотрудников</h1>
-    <?php foreach ($query as $item): ?>
-        <input type="text" hidden name="id" value="<?= $item['id'] ?>">
-        <p>Имя: <?= $item['name'] ?></p>
-        <p>Фамилия: <?= $item['surname'] ?></p>
-        <p>Должность: <?= $item['position'] ?></p>
-        <p>Зарплата: <?= $item['salary'] ?></p>
-        <br>
-    <button>Уволить</button>
-    <?php endforeach; ?>
+    <ul>
+        <?php foreach ($query as $item): ?>
+            <li style="list-style-type: none">
+                <input type="text" hidden name="id" value="<?= $item['id'] ?>">
+                <p>Имя: <?= $item['name'] ?></p>
+                <p>Фамилия: <?= $item['surname'] ?></p>
+                <p>Должность: <?= $item['position'] ?></p>
+                <p>Зарплата: <?= $item['salary'] ?></p>
+                <button>Уволить</button>
+            </li>
+            <br>
+        <?php endforeach; ?>
+    </ul>
 </form>
