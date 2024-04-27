@@ -2,10 +2,6 @@
 include './db.php';
 $query = mysqli_query($db, "SELECT * FROM `employee` WHERE 1");
 
-function deleteFromDb($db, $id) {
-    $query = mysqli_query($db, "DELETE FROM `employee` WHERE id = {$id}");
-}
-
 ?>
 <?php include './menu.php' ?>
 <h1>Список сотрудников</h1>

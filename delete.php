@@ -22,7 +22,6 @@ if (!empty($_POST)) {
         <p>Должность: <?= $item['position'] ?></p>
         <p>Зарплата: <?= $item['salary'] ?></p>
         <br>
-<!--        <input type="submit" value="уволить">-->
     <button>Уволить</button>
     <?php endforeach; ?>
 </form>
