@@ -2,6 +2,7 @@
 include './db.php';
 $query = mysqli_query($db, "SELECT * FROM `employee` WHERE 1");
 ?>
+<?php include './menu.php' ?>
 <h1>Список сотрудников</h1>
 <?php foreach ($query as $item): ?>
         <p>Имя: <?= $item['name'] ?></p>
