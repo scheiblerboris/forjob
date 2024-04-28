@@ -20,13 +20,13 @@ if (!empty($_POST)) {
 
 <form action="add.php" method="post" enctype="multipart/form-data">
     <label for="name">Имя</label>
-    <input type="text" id="name" name="name">
+    <input type="text" id="name" name="name" required>
     <label for="surname">Фамилия</label>
-    <input type="text" id="surname" name="surname">
+    <input type="text" id="surname" name="surname" required>
     <label for="position">Должность</label>
-    <input type="text" id="position" name="position">
+    <input type="text" id="position" name="position" required>
     <label for="salary">Зарплата</label>
-    <input type="text" id="salary" name="salary">
+    <input type="text" id="salary" name="salary" required>
     <input type="submit" value="Нанять">
 </form>
 
