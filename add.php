@@ -26,7 +26,7 @@ if (!empty($_POST)) {
     <label for="position">Должность</label>
     <input type="text" id="position" name="position">
     <label for="salary">Зарплата</label>
-    <input type="number" id="salary" name="salary">
+    <input type="text" id="salary" name="salary">
     <input type="submit" value="Нанять">
 </form>
 
