@@ -5,7 +5,8 @@ if (!empty($_POST)) {
     $name = $_POST['name'];
     $surname = $_POST['surname'];
     $position = $_POST['position'];
-    $salary = $_POST['salary'];
+    $salary = filter_input(INPUT_POST, 'salary', FILTER_VALIDATE_INT);
+    if ($salary === false) $salary = 0;
     $sql = "INSERT INTO `employee` ( `name`, `surname`, `position`, `salary`) VALUES  ('{$name}', '{$surname}', '{$position}', {$salary})";
     $query = mysqli_query($db, $sql);
     header("Location: ?");

@@ -23,7 +23,7 @@ if (!empty($_POST)) {
                 <p>Фамилия: <?= $item['surname'] ?></p>
                 <p>Должность: <?= $item['position'] ?></p>
                 <p>Зарплата: <?= $item['salary'] ?></p>
-                <button>Уволить</button>
+                <input type="submit" value="Уволить">
             </li>
             <br>
         <?php endforeach; ?>
