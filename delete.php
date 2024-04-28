@@ -9,23 +9,24 @@ if (!empty($_POST)) {
 }
 
 
-
 ?>
 <?php include './menu.php' ?>
 
-<form action="delete.php" method="post" enctype="multipart/form-data">
-    <h1>Список сотрудников</h1>
-    <ul>
-        <?php foreach ($query as $item): ?>
-            <li style="list-style-type: none">
+
+<h1>Список сотрудников</h1>
+<ul>
+    <?php foreach ($query as $item): ?>
+        <li style="list-style-type: none">
+            <form action="delete.php" method="post" enctype="multipart/form-data">
                 <input type="text" hidden name="id" value="<?= $item['id'] ?>">
                 <p>Имя: <?= $item['name'] ?></p>
                 <p>Фамилия: <?= $item['surname'] ?></p>
                 <p>Должность: <?= $item['position'] ?></p>
                 <p>Зарплата: <?= $item['salary'] ?></p>
                 <input type="submit" value="Уволить">
-            </li>
-            <br>
-        <?php endforeach; ?>
-    </ul>
-</form>
+            </form>
+        </li>
+        <br>
+    <?php endforeach; ?>
+</ul>
+
