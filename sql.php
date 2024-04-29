@@ -25,3 +25,4 @@ $sql = "INSERT INTO `employee` (`id`, `name`, `surname`, `age`, `experience`, `p
     . "(NULL, \'Федор\', \'Новиков\', NULL, NULL, \'менеджер\', \'100000\'),\n"
 
     . "(NULL, \'Галина\', \'Иванова\', NULL, NULL, \'программист\', \'150000\');";
+?>
